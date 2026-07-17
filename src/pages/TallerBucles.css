@@ -1,0 +1,183 @@
+.taller-bucles-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.taller-header {
+  background-color: #1f2937;
+  color: white;
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+}
+
+.taller-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.taller-header p {
+  margin: 8px 0 0;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.bloque-explicativo {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 20px 24px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+}
+
+.bloque-explicativo h2 {
+  margin: 0 0 8px;
+  color: #1e3a8a;
+}
+
+.bloque-explicativo p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.casos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.caso-card {
+  background-color: #ffffff;
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.caso-card h3 {
+  margin: 12px 0 10px;
+  color: #111827;
+  font-size: 21px;
+}
+
+.caso-card p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.caso-card code {
+  background-color: #f3f4f6;
+  color: #111827;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.error-card {
+  border-color: #fecaca;
+  background-color: #fff7f7;
+}
+
+.caso-etiqueta {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.caso-etiqueta.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.caso-etiqueta.correcto {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.resultado-box {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 16px 0;
+}
+
+.resultado-box p {
+  margin: 4px 0;
+  color: #111827;
+  font-weight: bold;
+}
+
+.botones-demo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botones-demo button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botones-demo button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.nota {
+  margin-top: 14px;
+  color: #166534;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nota-error {
+  color: #991b1b !important;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .casos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .taller-bucles-page {
+    padding: 16px;
+  }
+
+  .taller-header {
+    padding: 20px;
+  }
+
+  .taller-header h1 {
+    font-size: 25px;
+  }
+
+  .bloque-explicativo {
+    padding: 18px;
+  }
+
+  .caso-card {
+    padding: 18px;
+  }
+
+  .botones-demo {
+    flex-direction: column;
+  }
+
+  .botones-demo button {
+    width: 100%;
+  }
+}
